@@ -1,0 +1,16 @@
+name: Hello World
+
+# Define events that would trigger the execution of this workflow
+on: workflow_dispatch   # Wait for manual user trigger
+
+# Define work that needs to be done
+jobs:
+  first:
+    # Define the runner for this job
+    runs-on: ubuntu-latest
+
+    # Define the steps
+    steps:
+      - name: Hello World
+        # Execute a command from the command line
+        run: echo "Hello World!"
